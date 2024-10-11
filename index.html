@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Attendee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Event Attendee Management System</h1>
+        </header>
+
+        <main>
+            <section class="form-section">
+                <h2>Add New Attendee</h2>
+                <div class="input-group">
+                    <input type="text" id="attendeeNameInput" placeholder="Enter attendee's name">
+                    <button onclick="addAttendee()">Add</button>
+                </div>
+                <input type="text" id="addedAttendee" placeholder="Added attendee" disabled>
+            </section>
+
+            <section class="search-section">
+                <h2>Search Attendee</h2>
+                <div class="input-group">
+                    <input type="text" id="searchNameInput" placeholder="Search attendee">
+                    <button onclick="findAttendee()">Search</button>
+                </div>
+                <input type="text" id="searchedAttendee" placeholder="Searched attendee" disabled>
+            </section>
+
+            <section class="remove-section">
+                <h2>Remove Attendee</h2>
+                <div class="input-group">
+                    <input type="text" id="removeNameInput" placeholder="Enter attendee's name to remove">
+                    <button onclick="removeAttendee()">Remove</button>
+                </div>
+                <input type="text" id="removedAttendee" placeholder="Removed attendee" disabled>
+            </section>
+
+            <section class="list-section">
+                <h2>List of Attendees</h2>
+                <div class="input-group">
+                    <button onclick="listAttendees()">List Attendees</button>
+                </div>
+                <p id="attendeeList"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p id="message" class="message"></p>
+        </footer>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
